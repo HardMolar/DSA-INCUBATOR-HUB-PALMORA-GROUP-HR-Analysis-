@@ -1,4 +1,4 @@
-# PALMORA GROUP HR ANALYSIS- GENDER PAY GAP.
+# PALMORA GROUP HR ANALYSIS.
 
 ## 📌 Case Study Overview
 Palmora Group Manufacturing Company is a big manufacturing hub in Nigeria faced with allegations of gender inequality across its three operating regions. Media criticism and internal leadership concern have prompted an urgent HR data review to identify, assess, and recommend actions for equity, especially regarding pay gaps and performance-based bonus allocation.
@@ -73,19 +73,23 @@ Visualized by department and region using bar (stacked column chat) for gender d
 | Research and Develpment     | 5       | 31     | 38      |
 | Accounting                  | 2       | 37     | 28      |
 | Marketing                   | 1       | 33     | 31      |
-    
+
+![BI_001](https://github.com/user-attachments/assets/04261bb9-571e-4f26-a08b-1ada094befda)
+
 2. Ratings based on Gender
 Clustered chattered chat shows performance trends by gender and Line chat to show rating comparison by gender
   
 | Rating                      | Neutral | Male   | Female  |
 |-----------------------------|---------|--------|---------|
-| Average  		      | 18      | 212    | 190     |
+| Average  		                 | 18      | 212    | 190     |
 | Good                        | 9       | 82     | 89      |
-| Poor             	      | 5       | 70     | 58      |
+| Poor             	          | 5       | 70     | 58      |
 | Very Good                   | 3       | 37     | 42      |
-| Not Rated        	      | 2       | 34     | 35      |
+| Not Rated        	      `   | 2       | 34     | 35      |
 | Very Poor                   | 3       | 31     | 20      |
-   
+
+![BI_002](https://github.com/user-attachments/assets/d2bd0969-5578-4c42-be82-6fea9768b32a)
+
 3. Salary Structure Analysis across all departments and region
 * Detected gender pay gaps across certain departments/regions
 * Highlighted departments and regions for leadership focus
@@ -94,9 +98,9 @@ Clustered chattered chat shows performance trends by gender and Line chat to sho
 
 | Gender                      | High Pay              | Low Pay        |
 |-----------------------------|-----------------------|----------------|
-| Neutral  		      | Marketing             | Human Resources|
+| Neutral  		                 | Marketing             | Human Resources|
 | Male                        | Bisuness Development  | Engineering    |
-| Female             	      | Marketing             | Human Resources|
+| Female             	        | Marketing             | Human Resources|
 
 **Average Salary Per gender**
 Neutral: $78,367.50
@@ -111,23 +115,26 @@ Average Salary = AVERAGE('Palmoria Group emp-data'[Salary])
 **Abuja**
 | Gender                      | Departmets that pay high                                       |        
 |-----------------------------|----------------------------------------------------------------|
-| Neutral  		      | Marketing,Accounting, Human Resources, Research and Development|
+| Neutral  		                 | Marketing,Accounting, Human Resources, Research and Development|
 | Male                        | Marketing                                                      |
-| Female             	      | Marketing                                                      |
+| Female             	        | Marketing                                                      |
 
 **Lagos**
 | Gender                      | Departmets that pay high          |        
 |-----------------------------|-----------------------------------|
-| Neutral  		      | Accounting, Legal                 |
+| Neutral  		                 | Accounting, Legal                 |
 | Male                        | Accounting, Training              |
-| Female             	      | Accounting                        |
+| Female             	        | Accounting                        |
 
 **Kaduna**
 | Gender                      | Departmets that pay high          |        
 |-----------------------------|-----------------------------------|
-| Neutral  		      | Training, Sales                   |
+| Neutral  		                 | Training, Sales                   |
 | Male                        | Accounting, Training              |
-| Female             	      | Engineering                       |
+| Female             	        | Engineering                       |
+
+![BI_003](https://github.com/user-attachments/assets/ead7b2b9-a60c-4db9-b784-42cdb9a8a778)
+
 
 4a. Minimum Salary Compliance
 Analyzed employees earning below the $90,000 threshold, which = **654(69.13%)**
@@ -137,11 +144,14 @@ This is indeed a red flag 🚩 because more than 50% of the total employee are b
 Employees Below Minimum Salary = COUNTX(FILTER('Palmoria Group emp-data', 'Palmoria Group emp-data'[Salary] < 90000), 'Palmoria Group emp-data'[Name])
 ```
 
+![BI_004a](https://github.com/user-attachments/assets/332fc32a-9866-4403-ab99-b872e2d2abb8)
+
+
 4b. Salary Bands Distribution across all region
 
 | Salary Band ($)             | Employee Count    |        
 |-----------------------------|-------------------|
-| >100,000 		      | 202               |
+| >100,000 		                 | 202               |
 | 90,001 - 100,000            | 90                |
 | 80,001 - 90,000             | 108               |
 | 70,001 - 80,000             | 117               |
@@ -151,6 +161,9 @@ Employees Below Minimum Salary = COUNTX(FILTER('Palmoria Group emp-data', 'Palmo
 | 30,001 - 40,000             | 101               |
 | 20,001 - 30,000             | 28                |
 | **Total**                   | **946**           |
+
+![BI_004b](https://github.com/user-attachments/assets/f848e481-e2de-4a89-9d84-b7aecf13ef95)
+
 
 4c. Visualized by gender and region for comparative analysis
 
@@ -162,13 +175,16 @@ Bonus amount per employee
 ```dax
 Bonus Amount = SUMX('Palmoria Group emp-data', 'Palmoria Group emp-data'[Salary] * LOOKUPVALUE('Bonus Rules'[Value], 'Bonus Rules'[Department Rating], 'Palmoria Group emp-data'[Department Rating]))
 ```
-Total amount to be paid
+
+5b. Total amount to be paid
 
 ```dax
 Total Amount to be Paid = SUMX('Palmoria Group emp-data', 'Palmoria Group emp-data'[Salary] + [Bonus Amount])
 ```
 
-5b. Regional and company-wide bonus payout totals
+![BI_005a:b](https://github.com/user-attachments/assets/aa851520-ae4d-4308-a848-151b8d0908ca)
+
+5c. Regional and company-wide bonus payout totals
 
 **Regional Payment**
 kaduna = $27.48 million
@@ -177,6 +193,9 @@ Lagos = $19.53 million
 
 **Company-Wide Payment**
 $71.94 million
+
+![BI_005c](https://github.com/user-attachments/assets/6e02d9dd-db52-43c2-b1d2-7e1f36d732e5)
+
 
 ## ✅ Recomendations
 1. Address gender pay gaps, especially in flagged departments/region
