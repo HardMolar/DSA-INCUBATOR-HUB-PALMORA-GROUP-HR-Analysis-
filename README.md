@@ -76,10 +76,6 @@ Visualized by department and region using bar (stacked column chat) for gender d
 
 <img width="794" height="445" alt="HD1" src="https://github.com/user-attachments/assets/1958c2bb-6d8b-48a7-9ae9-ac7feea15dae" />
 
-
-
- 
-
 2. Ratings based on Gender
 Clustered chattered chat shows performance trends by gender and Line chat to show rating comparison by gender
   
