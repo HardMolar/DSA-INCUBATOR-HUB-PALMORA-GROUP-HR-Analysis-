@@ -74,7 +74,8 @@ Visualized by department and region using bar (stacked column chat) for gender d
 | Accounting                  | 2       | 37     | 28      |
 | Marketing                   | 1       | 33     | 31      |
 
-![BI_001](https://github.com/user-attachments/assets/04261bb9-571e-4f26-a08b-1ada094befda)
+<img width="1049" height="589" alt="HardMolar1" src="https://github.com/user-attachments/assets/3140518a-41c8-47a7-baeb-e0e7862714ab" />
+
 
 2. Ratings based on Gender
 Clustered chattered chat shows performance trends by gender and Line chat to show rating comparison by gender
