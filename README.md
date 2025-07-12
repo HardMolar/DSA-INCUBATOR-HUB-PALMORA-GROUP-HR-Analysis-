@@ -75,10 +75,6 @@ Visualized by department and region using bar (stacked column chat) for gender d
 | Marketing                   | 1       | 33     | 31      |
 
 ![HardMolar1](https://github.com/user-attachments/assets/39c66142-96e5-4ab9-b12f-aa67831cc252)
-
-
-
-
  
 
 2. Ratings based on Gender
