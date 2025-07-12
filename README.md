@@ -74,7 +74,8 @@ Visualized by department and region using bar (stacked column chat) for gender d
 | Accounting                  | 2       | 37     | 28      |
 | Marketing                   | 1       | 33     | 31      |
 
-![C1](https://github.com/user-attachments/assets/6ccd809c-a7f4-454b-acfb-81a4bc26fa8d)
+<img width="1049" height="589" alt="HardMolar1" src="https://github.com/user-attachments/assets/c95301ef-f8f5-4496-9987-1008d275f4fa" />
+
 
  
 
